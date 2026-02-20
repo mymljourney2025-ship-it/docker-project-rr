@@ -1,108 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>RR Technosoft Training Institute</title>
-    <meta charset="UTF-8">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                        url('https://images.unsplash.com/photo-1581090700227-1e8a5b6b1d57') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RR Technosoft Training Institute</title>
 
-        .container {
-            padding: 100px 20px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        h1 {
-            font-size: 60px;
-            color: red;
-            margin-bottom: 20px;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
-        }
+body {
+    color: #fff;
+    background: #0f0f1a;
+}
 
-        p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: auto;
-            line-height: 1.6;
-        }
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-        .courses {
-            margin-top: 40px;
-        }
+.hero-content {
+    max-width: 900px;
+}
 
-        .footer {
-            margin-top: 80px;
-            padding: 20px;
-            background: rgba(0,0,0,0.8);
-        }
+.hero h1 {
+    font-size: 65px;
+    color: #ff1e56;
+    font-weight: 700;
+}
 
-        .social-icons img {
-            width: 30px;
-            margin: 10px;
-        }
+.hero h2 {
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 28px;
+}
 
-        .btn {
-            margin-top: 30px;
-            padding: 15px 30px;
-            background-color: red;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-        }
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
 
-        .btn:hover {
-            background-color: darkred;
-        }
-    </style>
+.btn {
+    margin-top: 30px;
+    padding: 15px 35px;
+    background: #ff1e56;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff4e7a;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #ff1e56;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1c1c2e;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #252542;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.why-us {
+    background: linear-gradient(135deg, #ff1e56, #ff4e7a);
+    text-align: center;
+}
+
+.why-us h2 {
+    margin-bottom: 20px;
+}
+
+.why-us p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.footer {
+    background: #0a0a15;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.social-icons i {
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>RR TECHNOSOFT</h1>
-    <h2>Advanced IT Training Institute – KPHB, Hyderabad</h2>
-
-    <p>
-        RR Technosoft is a leading IT training institute offering industry-focused programs 
-        in DevOps, Cloud Computing, AI/ML, Data Science, Java Full Stack, Python, 
-        and Automation Testing. Our mission is to transform students into job-ready professionals 
-        with real-time project experience.
-    </p>
-
-    <div class="courses">
-        <h3>Our Popular Courses</h3>
-        <p>✔ DevOps with AWS & Azure</p>
-        <p>✔ Artificial Intelligence & Machine Learning</p>
-        <p>✔ Data Science & Analytics</p>
-        <p>✔ Java Full Stack Development</p>
-        <p>✔ Python Programming</p>
+<div class="hero">
+    <div class="hero-content">
+        <h1>RR TECHNOSOFT</h1>
+        <h2>Advanced IT Training Institute – KPHB, Hyderabad</h2>
+        <p>
+            Transforming students into industry-ready professionals with real-time projects, 
+            expert mentorship, and placement support in DevOps, AI/ML, Data Science, 
+            Cloud Computing, and Full Stack Development.
+        </p>
+        <button class="btn">Enroll Now</button>
     </div>
-
-    <a href="#" class="btn">Enroll Now</a>
 </div>
 
-<div class="footer">
-    <p>📍 Address: KPHB Colony, Hyderabad, Telangana</p>
-    <p>📞 Contact: +91-XXXXXXXXXX</p>
-    <p>📧 Email: info@rrtechnosoft.com</p>
-
-    <div class="social-icons">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="LinkedIn">
+<section>
+    <h2 class="section-title">Our Popular Courses</h2>
+    <div class="courses">
+        <div class="card">
+            <h3>DevOps with AWS & Azure</h3>
+            <p>Master CI/CD, Docker, Kubernetes, Terraform, and Cloud Infrastructure.</p>
+        </div>
+        <div class="card">
+            <h3>Artificial Intelligence & ML</h3>
+            <p>Deep learning, NLP, computer vision, and real-world ML deployment.</p>
+        </div>
+        <div class="card">
+            <h3>Data Science</h3>
+            <p>Python, Pandas, Power BI, SQL, and advanced analytics projects.</p>
+        </div>
+        <div class="card">
+            <h3>Java Full Stack</h3>
+            <p>Spring Boot, Microservices, React, and enterprise application development.</p>
+        </div>
     </div>
+</section>
 
-    <p>© 2026 RR Technosoft. All Rights Reserved.</p>
+<section class="why-us">
+    <h2>Why Choose RR Technosoft?</h2>
+    <p>
+        ✔ Real-time industry projects  
+        ✔ Certified trainers  
+        ✔ Interview preparation  
+        ✔ 100% placement assistance  
+        ✔ Flexible online & classroom training  
+    </p>
+</section>
+
+<div class="footer">
+    <p>📍 KPHB Colony, Hyderabad, Telangana</p>
+    <p>📞 +91-XXXXXXXXXX | 📧 info@rrtechnosoft.com</p>
+    <p>© 2026 RR Technosoft Training Institute. All Rights Reserved.</p>
 </div>
 
 </body>
